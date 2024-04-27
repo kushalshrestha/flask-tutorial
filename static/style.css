@@ -1,0 +1,31 @@
+/* Basic styles for the body of the page */
+body {
+    background-color: #107327; 
+    color: #FFF; /* Dark gray text color */
+    font-family: Arial, sans-serif; /* Use Arial or a sans-serif font */
+    margin: 0; /* No default margins */
+    padding: 0; /* No default padding */
+}
+
+/* Style for headers */
+h1 {
+    font-size: 2em; /* Double the base font size */
+    color: #444; /* Slightly lighter text color for headers */
+    text-align: center; /* Centered text */
+}
+
+/* Style for paragraphs */
+p {
+    line-height: 1.6; /* Increase line height for better readability */
+    margin: 10px 0; /* Add some space around paragraphs */
+}
+
+/* Style for links */
+a {
+    color: #1a73e8; /* Blue color for links */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
