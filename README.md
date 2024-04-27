@@ -17,3 +17,13 @@ Python comes bundled with the venv module to create virtual environments.
 `. .venv/bin/activate`
 
 `pip install Flask` - Installing the Flask
+
+### Running the application
+`flask --app hello run`
+
+### Externally Visible Server
+`flask --app hello run --host=0.0.0.0`
+
+### Enabling debug mode
+* server will automatically reload if code changes, and will show an interactive debugger in the browser if an error occurs during a request
+`flask --app hello run --debug`
