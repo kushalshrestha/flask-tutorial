@@ -2,6 +2,7 @@ from flask import Flask
 from markupsafe import escape
 from flask import url_for
 from flask import request
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -13,6 +14,11 @@ def index():
 def home():
     css_url = url_for('static', filename='style.css')
     return f'<link rel="stylesheet" type="text/css" href="{css_url}">' + '<p>Index Page</p>'
+
+# Rendering Template example:
+@app.route('/renderTest/<name>')
+def renderTest(name = None):
+    return render_template('renderTest.html', name = name)
 
 @app.route('/hello')
 def hello_world():
